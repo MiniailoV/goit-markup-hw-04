@@ -6,3 +6,34 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+/*Кнопка*/
+.button {
+  text-decoration: none;
+  align-items: center;
+  padding: 10px 20px;
+  display: inline-flex;
+  background-color: teal;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/*Это в спан прописываем-декоративная иконочка для кнопки*/
+.button > .icon {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  background-image: url(../); /*После подключения убрать бекграунд-колор*/
+  background-size: contain;
+}
+
+.button::before {
+  content: ''; /*свойство контент является обязательным, но его надо оставлять пустым*/
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-color: yellow; /*потом тоже убрать, после подключения урл картинки*/
+  background-image: url(../);
+  background-size: contain;
+}

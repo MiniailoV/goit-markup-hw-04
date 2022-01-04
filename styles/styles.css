@@ -141,6 +141,19 @@ img {
   padding-bottom: 200px;
   text-align: center; /*ВЫРАВНИВАЕТ КНОПКУ ПО ЦЕНТРУ*/
 }
+/********HERO-OVERLAY**********/
+.overlay {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-img.jpg);
+  background-color: var(--bcg-footer-heroes-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -177,10 +190,43 @@ img {
   display: flex;
   justify-content: center;
 }
+
 .pcls-item:not(:last-child) {
   margin-right: 30px;
   margin-left: auto;
 }
+
+.pcls-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  /* outline: 1px solid black; */
+  /* background-image: url(../images/antenna1.png); */
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--bcg-ourteam-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+/* .pcls-item:nth-child(2)::before {
+  background-image: url(../images/clock1.png);
+} */
+
+.pcls-item.icon-antenna::before {
+  background-image: url(../images/antenna1.png);
+}
+.pcls-item.icon-clock::before {
+  background-image: url(../images/clock1.png);
+}
+.pcls-item.icon-comp::before {
+  background-image: url(../images/comp.png);
+}
+.pcls-item.icon-astronaut::before {
+  background-image: url(../images/astronaut.png);
+}
+
 /*------WHAT WE DO SCTN & OUR TEAM-------*/
 .wwd-section-title,
 .team-section-title-head {
@@ -339,17 +385,4 @@ img {
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   padding: 20px 24px;
-}
-/********OVERLAY**********/
-.overlay {
-  max-width: 1600px;
-  min-height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, red, blue);
-  /* background-image: url(../images/hero-img.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  outline: 1px solid red; */
 }
