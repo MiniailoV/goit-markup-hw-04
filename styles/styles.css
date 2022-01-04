@@ -136,7 +136,7 @@ img {
 }
 /*HERO*/
 .hero {
-  background-color: var(--bcg-footer-heroes-color);
+  /* background-color: var(--bcg-footer-heroes-color); */
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center; /*ВЫРАВНИВАЕТ КНОПКУ ПО ЦЕНТРУ*/
@@ -339,4 +339,17 @@ img {
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   padding: 20px 24px;
+}
+/********OVERLAY**********/
+.overlay {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, red, blue);
+  /* background-image: url(../images/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  outline: 1px solid red; */
 }
