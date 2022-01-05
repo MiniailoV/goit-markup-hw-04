@@ -68,3 +68,12 @@ html {
   outline 1px solid black;
   list-style: none;
 }
+
+/*SVG-LINK*/
+.adres-link {
+  width: 44px;
+  height: 44px;
+  background-color: teal;
+  display: block;
+border-radius: 50%;
+}

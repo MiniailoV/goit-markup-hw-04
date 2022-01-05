@@ -196,10 +196,25 @@ img {
   margin-left: auto;
 }
 
-.icon-pcls {
+/* .button {
+  padding: 0px;
+  border: none;
+} */
+.astra {
   width: 70px;
-  height: 70px;
+  margin-bottom: 30px;
+}
+.icon-pcls {
+  outline: 1px solid black;
+  width: 270px;
+  height: 120px;
   fill: red;
+  background-color: teal;
+  display: block;
+  margin-bottom: 30px;
+}
+.icon-pcls:hover {
+  fill: teal;
 }
 
 /* .pcls-item::before {
@@ -262,6 +277,7 @@ img {
   line-height: 1.18;
   color: var(--grey-color);
   margin-top: 10px;
+  margin-bottom: 16px;
 }
 .team-section {
   background-color: var(--bcg-ourteam-color);
@@ -279,6 +295,26 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+/*SOCIAL-LINKS*/
+.team-social-list {
+  display: flex;
+  justify-content: center;
+}
+.team-social-item + .team-social-item {
+  margin-left: 10px;
+}
+.team-social-link {
+  width: 44px;
+  height: 44px;
+  background-color: teal;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-social-icon {
+  fill: tomato;
 }
 /*ВЫРАВНИВАНИЕ ТЕКСТА В КАРТОЧКАХ*/
 .box-team-section-text {
