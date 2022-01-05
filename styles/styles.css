@@ -196,25 +196,31 @@ img {
   margin-left: auto;
 }
 
-.pcls-item::before {
+.icon-pcls {
+  width: 70px;
+  height: 70px;
+  fill: red;
+}
+
+/* .pcls-item::before {
   display: block;
   content: '';
-  height: 120px;
-  /* outline: 1px solid black; */
-  /* background-image: url(../images/antenna1.png); */
-  /* background-size: contain; */
-  background-repeat: no-repeat;
+  height: 120px; */
+/* outline: 1px solid black; */
+/* background-image: url(../images/antenna1.png); */
+/* background-size: contain; */
+/* background-repeat: no-repeat;
   background-position: center;
   background-color: var(--bcg-ourteam-color);
   border-radius: 4px;
   margin-bottom: 30px;
-}
+} */
 
 /* .pcls-item:nth-child(2)::before {
   background-image: url(../images/clock1.png);
-} */
+} Один из вариантов*/
 
-.pcls-item.icon-antenna::before {
+/* .pcls-item.icon-antenna::before {
   background-image: url(../images/antenna1.png);
 }
 .pcls-item.icon-clock::before {
@@ -225,7 +231,7 @@ img {
 }
 .pcls-item.icon-astronaut::before {
   background-image: url(../images/astronaut.png);
-}
+} */
 
 /*------WHAT WE DO SCTN & OUR TEAM-------*/
 .wwd-section-title,
