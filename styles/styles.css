@@ -7,6 +7,7 @@
   --bcg-footer-heroes-color: #2f303a;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
   --wwd-color: #e5e5e5;
+  --icon-color: #afb1b8;
 }
 body {
   background-color: var(--white-color);
@@ -296,26 +297,39 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-/*SOCIAL-LINKS*/
+
+/*-------------SOCIAL-LINKS---------------*/
 .team-social-list {
   display: flex;
   justify-content: center;
 }
+
 .team-social-item + .team-social-item {
   margin-left: 10px;
 }
+
 .team-social-link {
   width: 44px;
   height: 44px;
-  background-color: teal;
+  /* background-color: teal; */
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--icon-color);
 }
+
 .team-social-icon {
-  fill: tomato;
+  fill: currentColor;
 }
+
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}
+/*------------END OF SOCIAL LINKS------*/
+
 /*ВЫРАВНИВАНИЕ ТЕКСТА В КАРТОЧКАХ*/
 .box-team-section-text {
   background-color: #ffffff;
