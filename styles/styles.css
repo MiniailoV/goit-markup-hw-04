@@ -276,12 +276,51 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-/*-------------SOCIAL-LINKS---------------*/
+/*-------------CLIENTS-SECTION------------*/
+.clients-section-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+.clients-item + .clients-item {
+  margin-left: 30px;
+}
+.clients-link {
+  width: 170px;
+  height: 92px;
+  /* background-color: teal; */
+  /* border-radius: 50%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--icon-color);
+  outline: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients-icon {
+  fill: currentColor;
+}
+.clients-icon:hover {
+  fill: currentColor;
+}
+.clients-link:hover,
+.clients-link:focus {
+  background-color: var(--white-color);
+  color: var(--blue-color);
+  /*-------------SOCIAL-LINKS---------------*/
+}
 .team-social-list {
   display: flex;
   justify-content: center;
 }
-
 .team-social-item + .team-social-item {
   margin-left: 10px;
 }
